@@ -1,0 +1,96 @@
+{
+  "widgets": {
+    "cloud-accounts": {
+      "id": "cloud-accounts",
+      "name": "Cloud Accounts",
+      "type": "progress",
+      "data": [
+        {
+          "name": "Connected",
+          "value": 2,
+          "color": "#2563eb"
+        },
+        {
+          "name": "Not Connected",
+          "value": 2,
+          "color": "#bfdbfe"
+        }
+      ]
+    },
+    "risk-assessment": {
+      "id": "risk-assessment",
+      "name": "Cloud Account Risk Assessment",
+      "type": "pie",
+      "data": [
+        {
+          "name": "Failed",
+          "value": 1689,
+          "color": "#ef4444"
+        },
+        {
+          "name": "Warning",
+          "value": 681,
+          "color": "#f59e0b"
+        },
+        {
+          "name": "Passed",
+          "value": 7253,
+          "color": "#10b981"
+        }
+      ]
+    },
+    "image-risk": {
+      "id": "image-risk",
+      "name": "Image Risk Assessment",
+      "type": "bar",
+      "data": [
+        {
+          "label": "Critical",
+          "value": 9,
+          "color": "#b91c1c"
+        },
+        {
+          "label": "High",
+          "value": 150,
+          "color": "#f97316"
+        },
+        {
+          "label": "Medium",
+          "value": 420,
+          "color": "#f59e0b"
+        }
+      ]
+    },
+    "empty-1": {
+      "id": "empty-1",
+      "name": "Placeholder",
+      "type": "empty"
+    }
+  },
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "widgetIds": [
+        "cloud-accounts",
+        "risk-assessment",
+        "empty-1"
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard",
+      "widgetIds": [
+        "image-risk",
+        "empty-1"
+      ]
+    },
+    {
+      "id": "registry",
+      "name": "Registry Scan",
+      "widgetIds": [
+        "empty-1"
+      ]
+    }
+  ]
+}
